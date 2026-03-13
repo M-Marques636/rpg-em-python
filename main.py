@@ -1,36 +1,51 @@
 import random
 import os
-import time
-import keyboard
 import mouse
+import keyboard
 
+armas = [
+    {"nome": "graveto", "dano": (3), "chance": (2.0, 3.0), "drop": (2.0, 5.0)},
+    {"nome": "faca de cozinha", "dano": (7), "chance": (2.0, 3.0), "drop": (6.0, 10.0)},
+    {"nome": "cutelo", "dano": (12), "chance": (2.0, 3.0), "drop": (11.0, 20.0)},
+    {"nome": "katana", "dano": (20), "chance": (2.0, 3.0), "drop": (21.0, 35.0)}
+]
 
 def limpar_tela():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-tempo_dialogo = 1
-tempo_combate = 1
 espaco = "\n===============================================================\n" 
-clique = "\nClique na tela para avançar turno."
 
 
 nome = input("Digite o nome de seu personagem: ")
 level = 0
+inventario = []
+m_ou_t = ""
 
 jogador = {
     "nome": nome,
     "level": (level),
     "vida": 100 + (5* level),
     "ataque": (10, 20),
+    "inventario": (inventario)
 }
 print(jogador)
 
 inimigos = [
-    {"nome": "goblin", "vida": 30, "ataque": (5, 10), "exp": (5)},
-    {"nome": "urso", "vida": 60, "ataque": (13, 26), "exp": (15)},
-    {"nome": "orc", "vida": 50, "ataque": (15, 20), "exp": (13)},
-    {"nome": "Miguel", "vida": 10000, "ataque": (100, 1000), "exp": (9999)}
+    {"nome": "goblin", "vida": 30, "ataque": (5, 10), "exp": (5), "loot": (0.5)},
+    {"nome": "urso", "vida": 60, "ataque": (13, 26), "exp": (15), "loot": (1.5)},
+    {"nome": "orc", "vida": 50, "ataque": (15, 20), "exp": (13), "loot": (3.0)},
+    {"nome": "Deus", "vida": 10000, "ataque": (100, 1000), "exp": (9999)} 
 ]
+print("Você quer jogar com mouse ou teclado?\n")
+while m_ou_t not in ["mouse", "teclado", "m" , "t"]:
+    m_ou_t = input("Digite mouse (m) ou teclado (t): ").lower().strip()
+    
+if m_ou_t in ["mouse", "m"]:
+    clique = "\nClique na tela para avançar turno."
+else:
+    clique = "\nAperte enter para avançar turno."
+        
+    
 
 
 
@@ -42,7 +57,10 @@ def batalha(jogador, inimigo):
     print(clique)
     print(espaco)  
     
-    mouse.wait(button='left', target_types=['down'])
+    if m_ou_t in ["mouse", "m"]:
+        mouse.wait(button='left', target_types=['down'])
+    else:
+        keyboard.wait('enter')
     limpar_tela()
     
     
@@ -53,7 +71,10 @@ def batalha(jogador, inimigo):
         print(clique)
         print(espaco)
         
-        mouse.wait(button='left', target_types=['down']) 
+        if m_ou_t in ["mouse", "m"]:
+            mouse.wait(button='left', target_types=['down'])
+        else:
+            keyboard.wait('enter')
         limpar_tela()
 
         dano = random.randint(*jogador["ataque"])
@@ -64,8 +85,10 @@ def batalha(jogador, inimigo):
         print(clique)
         print(espaco)   
         
-        mouse.wait(button='left', target_types=['down'])  
-        limpar_tela()
+        if m_ou_t in ["mouse", "m"]:
+            mouse.wait(button='left', target_types=['down'])
+        else:
+            keyboard.wait('enter')
 
         if inimigo['vida'] <= 0:
             break
@@ -75,7 +98,10 @@ def batalha(jogador, inimigo):
         print(clique)
         print(espaco)  
         
-        mouse.wait(button='left', target_types=['down'])  
+        if m_ou_t in ["mouse", "m"]:
+            mouse.wait(button='left', target_types=['down'])
+        else:
+            keyboard.wait('enter') 
         limpar_tela()
 
         dano = random.randint(*inimigo["ataque"])
@@ -86,7 +112,10 @@ def batalha(jogador, inimigo):
         print(clique)
         print(espaco)  
          
-        mouse.wait(button='left', target_types=['down']) 
+        if m_ou_t in ["mouse", "m"]:
+            mouse.wait(button='left', target_types=['down'])
+        else:
+            keyboard.wait('enter')
         limpar_tela()
         
     if jogador['vida'] <= 0:
@@ -104,10 +133,11 @@ def batalha(jogador, inimigo):
         print(clique)
         print(espaco)   
         
-        mouse.wait(button='left', target_types=['down']) 
+        if m_ou_t in ["mouse", "m"]:
+            mouse.wait(button='left', target_types=['down'])
+        else:
+            keyboard.wait('enter')
         
-            
-
  
 # Testando contra o primeiro inimigo
 for inimigo in inimigos:

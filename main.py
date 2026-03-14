@@ -2,6 +2,7 @@ import random
 import os
 import mouse
 import keyboard
+<<<<<<< HEAD
 class Jogador():
     def __init__(self, nome, level, vida, ataque, inventario):
         self.nome = nome
@@ -17,6 +18,8 @@ class Jogador():
             self.vida -= dano
         pass
 
+=======
+>>>>>>> 428b5f04c22331d870b4f9f7f0819fc878f893d0
 
 armas = [
     {"nome": "graveto", "dano": (3), "chance": (2.0, 3.0), "drop": (2.0, 5.0)},

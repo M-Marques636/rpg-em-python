@@ -1,25 +1,9 @@
-import random
+
 import os
 import mouse
 import keyboard
-<<<<<<< HEAD
-class Jogador():
-    def __init__(self, nome, level, vida, ataque, inventario):
-        self.nome = nome
-        self.level = level
-        self.vida = vida
-        self.ataque = ataque
-        self.inventario = inventario
-        
-        def atacar(self):
-            return random.randit(*self.ataque)
-        
-        def receber_dano(self, dano):
-            self.vida -= dano
-        pass
 
-=======
->>>>>>> 428b5f04c22331d870b4f9f7f0819fc878f893d0
+
 
 armas = [
     {"nome": "graveto", "dano": (3), "chance": (2.0, 3.0), "drop": (2.0, 5.0)},
@@ -39,21 +23,9 @@ level = 0
 inventario = []
 m_ou_t = ""
 
-jogador = {
-    "nome": nome,
-    "level": (level),
-    "vida": 100 + (5* level),
-    "ataque": (10, 20),
-    "inventario": (inventario)
-}
 print(jogador)
 
-inimigos = [
-    {"nome": "goblin", "vida": 30, "ataque": (5, 10), "exp": (5), "loot": (0.5)},
-    {"nome": "urso", "vida": 60, "ataque": (13, 26), "exp": (15), "loot": (1.5)},
-    {"nome": "orc", "vida": 50, "ataque": (15, 20), "exp": (13), "loot": (3.0)},
-    {"nome": "Deus", "vida": 10000, "ataque": (100, 1000), "exp": (9999)} 
-]
+
 print("Você quer jogar com mouse ou teclado?\n")
 while m_ou_t not in ["mouse", "teclado", "m" , "t"]:
     m_ou_t = input("Digite mouse (m) ou teclado (t): ").lower().strip()

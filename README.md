@@ -46,5 +46,5 @@ Esse é meu primeiro "projeto", tentando criar um rpg em python
 - [ㅤ] **Sistema de Save/Load:** Salvar os dados em um arquivo `.json`.
 - [ㅤ] **Interface Colorida:** Usar a biblioteca `colorama` para deixar o dano em **Vermelho** e a cura em **Verde**, por exemplo.
 - [?] **Sons:** Usar a biblioteca `pygame` para tocar um som de espada quando você atacar.
-- [???] **Organização em Classes (POO):** Transformar o Jogador e os Inimigos em Classes.
+- [/] **Organização em Classes (POO):** Transformar o Jogador e os Inimigos em Classes.
 

@@ -26,14 +26,14 @@ Esse é meu primeiro "projeto", tentando criar um rpg em python
 
 ### Inventário & Economia
 - [ㅤ] **Sistema de Loot Aleatório:** Inimigos dropam itens diferentes (Comum, Raro, Épico).
-- [ㅤ] **Equipamentos:** Slots para Cabeça, Peito e Arma (cada um aumenta um status).
-- [ㅤ] **Consumíveis:** Poções de vida, poções de força temporária e comida.
+- [/] **Equipamentos:** Slots para Cabeça, Peito e Arma (cada um aumenta um status).
+- [/] **Consumíveis:** Poções de vida, poções de força temporária e comida.
 - [ㅤ] **A Loja do Mercador:** Comprar itens novos e vender o que você ganhou.
 - [?] **Sistema de Peso:** Limitar quantos itens o jogador pode carregar.
 
 ### Progressão & RPG
-- [ㅤ] **Sistema de Level Up:** Ganhar XP, subir de nível e ganhar pontos para distribuir (Força, Agilidade, Vitalidade).
-- [?] **Árvore de Habilidades:** Escolher entre caminhos/classes.
+- [/] **Sistema de Level Up:** Ganhar XP, subir de nível e ganhar pontos para distribuir (Força, Agilidade, Vitalidade).
+- [???] **Árvore de Habilidades:** Escolher entre caminhos/classes.
 - [?] **Bestiário:** Uma lista que mostra quais monstros você já derrotou.
 
 ### Mundo & Imersão

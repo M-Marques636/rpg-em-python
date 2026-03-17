@@ -1,1 +1,1 @@
-print("Data package loaded.")
+print("Data package loaded.\n")

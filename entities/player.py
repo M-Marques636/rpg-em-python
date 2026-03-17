@@ -9,7 +9,7 @@ class Player:
         self.max_health = 100
         self.health = self.max_health
 
-        self.damage = (5, 10)
+        self.damage = (10, 15)
 
         self.inventory = []
 

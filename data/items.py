@@ -53,5 +53,20 @@ ITEM_DATABASE = {
            "stats": {
                "defense": 5
         }
-    }
+    },
+        "wooden_bow": {
+            "name": "Bow",
+            "type": "weapon",
+            "stats": {
+                "damage": 5
+            }
+        },
+        
+        "orc_wooden_club": {
+            "name": "Club",
+            "type": "weapon",
+            "stats": {
+                "damage": 20
+                }
+            },
 }

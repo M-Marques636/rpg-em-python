@@ -1,12 +1,15 @@
 import random
 
 class Enemy():
-    def __init__(self, name, max_health, damage, exp):
+    def __init__(self, name, max_health, damage, exp, weapon, armor):
         self.name = name
         self.max_health = max_health
         self.health = max_health
         self.damage = damage
         self.exp = exp
+        
+        self.weapon = weapon
+        self.armor = armor
         
     def attack(self):
         return random.randint(*self.damage)

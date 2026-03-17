@@ -17,8 +17,8 @@ Esse é meu primeiro "projeto", tentando criar um rpg em python
 ---
 
 ###  Combate & Mecânicas
-- [/] Sistema de combate básico (Turnos)
-- [/] Melhorar sistema de combate (Adicionar Crítico e Esquiva)
+- [x] Sistema de combate básico (Turnos)
+- [/] Melhorar sistema de combate
 - [???] **Sistema de Mana/Energia:** Usar habilidades especiais que custam pontos.
 - [?] **Efeitos de Status:** Inimigos que podem envenenar ou paralisar por um tempo determinado (turnos).
 - [ㅤ] **Fuga:** Chance de conseguir fugir de uma luta antes de morrer (baseado em sorte ou nível).
@@ -26,7 +26,8 @@ Esse é meu primeiro "projeto", tentando criar um rpg em python
 
 ### Inventário & Economia
 - [ㅤ] **Sistema de Loot Aleatório:** Inimigos dropam itens diferentes (Comum, Raro, Épico).
-- [/] **Equipamentos:** Slots para Cabeça, Peito e Arma (cada um aumenta um status).
+- [x] **Equipamentos basicos:** Dicionario de armas, armaduras e etc.
+- [/] **Equipamentos++:** Slots para Cabeça, Peito e Arma (cada um aumenta um status).
 - [/] **Consumíveis:** Poções de vida, poções de força temporária e comida.
 - [ㅤ] **A Loja do Mercador:** Comprar itens novos e vender o que você ganhou.
 - [?] **Sistema de Peso:** Limitar quantos itens o jogador pode carregar.

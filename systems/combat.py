@@ -6,16 +6,17 @@ def battle(player, enemy):
     if not player.alive():
             show_death(player)
     while player.alive() and enemy.alive():
-        time.sleep(2)
+        #time.sleep(2)
         player_turn(player, enemy)
 
         if not enemy.alive():
             show_death(enemy)
+            player.level_up(enemy)
             break
         if not player.alive():
             show_death(player)
             break
-        time.sleep(2)
+        #time.sleep(2)
         enemy_turn(player, enemy)
 
 def player_turn(player, enemy):

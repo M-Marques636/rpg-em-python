@@ -1,9 +1,37 @@
-from entities.enemy import Enemy
-from items.item_factory import create_item
-from data.items import ITEM_DATABASE
+ENEMY_DATABASE = {
+    "elf": {
+        "name": "Elf",
+        "health": 50,
+        "damage": (10, 25),
+        "exp": 25,
+        "weapon": "wooden_bow",
+        "armor": "leather_armor"
+    },
 
+    "goblin": {
+        "name": "Goblin",
+        "health": 30,
+        "damage": (5, 10),
+        "exp": 5,
+        "weapon": "stick",
+        "armor": None
+    },
 
-Elf = Enemy("Elf", 50, (10, 25), 25, create_item("wooden_bow"), create_item("leather_armor"))
-Goblin = Enemy("Goblin", 30, (5, 10), 5, create_item("stick"), None)
-Bear = Enemy("Urso", 60, (10, 15), 15, None, None)
-Orc = Enemy("Orc", 75, (20, 30), 20, create_item("orc_wooden_club"), None)
+    "bear": {
+        "name": "Bear",
+        "health": 60,
+        "damage": (10, 15),
+        "exp": 15,
+        "weapon": None,
+        "armor": None
+    },
+
+    "orc": {
+        "name": "Orc",
+        "health": 75,
+        "damage": (20, 30),
+        "exp": 50,
+        "weapon": "orc_wooden_club",
+        "armor": None
+    }
+}

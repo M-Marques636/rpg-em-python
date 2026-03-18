@@ -4,7 +4,8 @@ class Player:
     def __init__(self, name):
         self.name = name
         self.level = 1
-        self.exp_max = 100 * self.level
+        self.exp_max = 100
+        self.exp = 0
 
         self.max_health = 100
         self.health = self.max_health
@@ -32,3 +33,12 @@ class Player:
          
         elif item.type == "armor":
          self.armor = item
+         
+    
+    def level_up(self, enemy):
+        self.exp += enemy.exp
+        while self.exp >= self.exp_max:
+          self.level += 1
+          self.exp = self.exp
+          self.exp_max = 100 * self.level     
+        

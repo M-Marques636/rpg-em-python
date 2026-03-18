@@ -39,10 +39,10 @@ Esse é meu primeiro "projeto", tentando criar um rpg em python
 - [?] **Bestiário:** Uma lista que mostra quais monstros você já derrotou.
 
 ### Mundo & Imersão
-- [  ] **Exploração por Texto:** "Você está em uma floresta escura. Para onde deseja ir? [Norte/Sul/Leste/Oeste]".
+- [ㅤ] **Exploração por Texto:** "Você está em uma floresta escura. Para onde deseja ir? [Norte/Sul/Leste/Oeste]".
 - [?] **Eventos Aleatórios:** Encontrar um baú escondido ou um mendigo que pede ajuda.
 - [ㅤ] **Dungeons:** Sequência de lutas que termina em um Boss.
-- [  ] **Sistema de Narrativa:** Pequenos textos que contam uma historia.
+- [ㅤ] **Sistema de Narrativa:** Pequenos textos que contam uma historia.
 
 ### Parte Técnica
 - [ㅤ] **Sistema de Save/Load:** Salvar os dados em um arquivo `.json`.

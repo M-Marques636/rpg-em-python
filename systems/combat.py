@@ -1,23 +1,27 @@
 from ui.combat_logs import show_damage
 from ui.combat_logs import show_death
+from systems.level import level_up
 import time
 
 def battle(player, enemy):
-    if not player.alive():
-            show_death(player)
-    while player.alive() and enemy.alive():
-        #time.sleep(2)
-        player_turn(player, enemy)
 
-        if not enemy.alive():
-            show_death(enemy)
-            player.level_up(enemy)
-            break
-        if not player.alive():
+    if player.alive():
+        while player.alive() and enemy.alive():
+                #time.sleep(2)
+            player_turn(player, enemy)
+
+            if not enemy.alive():
+                show_death(enemy)
+                level_up(player, enemy)
+                break
+            if not player.alive():
+                show_death(player)
+                break
+            #time.sleep(2)
+            enemy_turn(player, enemy)
+        else:
             show_death(player)
-            break
-        #time.sleep(2)
-        enemy_turn(player, enemy)
+
 
 def player_turn(player, enemy):
     damage = attack(player, enemy)

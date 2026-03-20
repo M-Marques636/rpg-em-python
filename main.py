@@ -7,17 +7,15 @@ from systems.combat import battle
 from systems.encounter import fight
 from ui.combat_logs import show_damage
 from ui.combat_logs import show_death
+from systems.level import level_up
+from systems.level import update_stats
+from ui.story_logs import start_game
 
-player = Player("Hero")
+player_name = start_game()
 
-sword = create_item("iron_sword")
+player = Player(player_name)
 
-armor = create_item("iron_armor")
+print(player.name)
+print(player.damage)
 
-player.inventory.append(sword)
-
-player.inventory.append(armor)
-
-player.equip(armor)
-player.equip(sword)
-
+fight(player, "orc")

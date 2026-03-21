@@ -18,16 +18,16 @@ def level_up(player, enemy):
         update_stats(player)
             
 def update_stats(player):
-    player.max_health = 100 + player.vitality
+    player.max_health = 100 + (player.vitality * 15)
     player.health = player.max_health
-    player.damage = (10 + player.strength, 15 + player.strength)
+    player.damage = (10 + (player.strength * 5), 15 + (player.strength * 5))
     
 def attributes(choice, player):
     if choice == "1":
-        player.vitality += 15
+        player.vitality += 1
     elif choice == "2":
-        player.strength += 5
+        player.strength += 1
     elif choice == "3":
-        player.dexterity += 5
+        player.dexterity += 1
     elif choice == "4":
-        player.luck += 5
+        player.luck += 1

@@ -66,7 +66,7 @@ ITEM_DATABASE = {
             "name": "Club",
             "type": "weapon",
             "stats": {
-                "damage": 20
+                "damage": -220
                 }
             },
 }

@@ -3,3 +3,6 @@ class Item:
         self.name = name
         self.type = item_type
         self.stats = stats
+        
+    def __str__(self):
+        return self.name

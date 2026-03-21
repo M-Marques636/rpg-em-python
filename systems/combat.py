@@ -7,7 +7,7 @@ def battle(player, enemy):
 
     if player.alive():
         while player.alive() and enemy.alive():
-                #time.sleep(2)
+            time.sleep(2)
             player_turn(player, enemy)
 
             if not enemy.alive():
@@ -17,7 +17,7 @@ def battle(player, enemy):
             if not player.alive():
                 show_death(player)
                 break
-            #time.sleep(2)
+            time.sleep(2)
             enemy_turn(player, enemy)
         else:
             show_death(player)

@@ -6,20 +6,20 @@ class Player:
         self.level = 1
         self.exp_max = 100
         self.exp = 0
-        self.dexterity = 0
-        self.strength = 0
-        self.vitality = 0
-        self.luck = 0
+        self.dexterity = 1
+        self.strength = 1
+        self.vitality = 1
+        self.luck = 1
         
 
-        self.max_health = 100 + self.vitality
+        self.max_health = 100
         self.health = self.max_health
 
         self.damage = (10, 15)
 
         self.inventory = []
 
-        self.weapon = None
+        self.weapon = None 
         self.armor = None
 
     def attack(self):

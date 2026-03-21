@@ -30,7 +30,7 @@ ENEMY_DATABASE = {
         "name": "Orc",
         "health": 75,
         "damage": (20, 30),
-        "exp": 50,
+        "exp": 5000,
         "weapon": "orc_wooden_club",
         "armor": None
     }

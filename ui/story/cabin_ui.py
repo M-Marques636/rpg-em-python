@@ -35,3 +35,6 @@ def show_chest():
 def show_exit_cabin():
     print("\nVocê decide sair da cabana.")
     print("A floresta silenciosa te espera lá fora.")    
+    
+def show_back():
+    print("[V] Voltar")

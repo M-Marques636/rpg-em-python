@@ -5,13 +5,11 @@ def show_mountain():
     print("[S] Seguir em frente (Min: level 50)")
     print("[V] Voltar")
     
-def show_not_ready():
+def show_mountain_not_ready():
     print("Você ainda não é forte o suficiente.")
     print("[V] Voltar")
     
 def show_mountain_inside():
     print("Você entra e morre.")
-
-def show_mountain_leave():
     print("\nVocê decide voltar uma outra hora")
     print("A imensidão floresta é a unica coisa te esperando.")

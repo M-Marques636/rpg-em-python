@@ -18,4 +18,5 @@ def start_game():
     return name
 
 player_name = start_game()
-forest()
+player = Player(player_name)
+forest(player)

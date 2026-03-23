@@ -3,7 +3,7 @@ def show_cabin():
     print("Ela parece abandonada, mas a porta está entreaberta.")
     print("Lá dentro, você consegue ver uma mesa, uma lareira e um baú no canto.")
     print("\nO que deseja fazer?")
-    print("[E] Entrar")
+    print("[S] Seguir em frente")
     print("[V] Voltar")
     
 def show_cabin_inside():

@@ -1,10 +1,18 @@
 from ui.input_handler import ask_directions
 from ui.story.forest_ui import show_forest
 
-def forest():
+
+def forest(player):
     from scenes.cabin import cabin
+    from scenes.mountain import mountain
     show_forest()
     
     choice = ask_directions().lower()
     if choice == "norte":
-        cabin()
+        mountain(player)
+    elif choice == "sul":
+        village(player)
+    elif choice == "leste":
+        cabin(player)
+    elif choice == "oeste":
+        cavern(player)
